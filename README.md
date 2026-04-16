@@ -6,20 +6,20 @@
   <!-- ==================== SNAKE ANIMATION (rất nổi bật) ==================== -->
   <h2>🐍 My Contribution Snake – Con rắn đang "ăn" commit của tôi 🐍</h2>
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/TÊN_USERNAME/TÊN_USERNAME/output/github-contribution-grid-snake-dark.svg">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/TÊN_USERNAME/TÊN_USERNAME/output/github-contribution-grid-snake.svg">
-    <img src="https://raw.githubusercontent.com/TÊN_USERNAME/TÊN_USERNAME/output/github-contribution-grid-snake.svg" 
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Senning-Dd/Senning-Dd/output/github-contribution-grid-snake-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Senning-Dd/Senning-Dd/output/github-contribution-grid-snake.svg">
+    <img src="https://raw.githubusercontent.com/Senning-Dd/Senning-Dd/output/github-contribution-grid-snake.svg" 
          alt="GitHub Contribution Snake" width="820" style="border-radius: 15px; box-shadow: 0 15px 35px rgba(0,255,150,0.4);" />
   </picture>
 
   <!-- ==================== 3D CONTRIBUTION (siêu hiện đại) ==================== -->
   <h2>🌌 3D Isometric Contribution Calendar 🌌</h2>
-  <img src="https://raw.githubusercontent.com/TÊN_USERNAME/TÊN_USERNAME/output/profile-3d-contrib/profile-green-animate.svg" 
+  <img src="https://raw.githubusercontent.com/Senning-Dd/Senning-Dd/output/profile-3d-contrib/profile-green-animate.svg" 
        alt="3D GitHub Contributions" width="720" style="border-radius: 15px; box-shadow: 0 15px 35px rgba(138,43,226,0.3);" />
 
   <!-- ==================== CLASSIC NEON CALENDAR ==================== -->
   <h2>✨ Neon Contribution Graph ✨</h2>
-  <img src="https://ghchart.rshah.org/00FF9F/TÊN_USERNAME" 
+  <img src="https://ghchart.rshah.org/00FF9F/Senning-Dd" 
        alt="Neon Green Contribution Calendar" width="820" height="320" 
        style="border-radius: 15px; box-shadow: 0 10px 30px rgba(0,255,159,0.5);" />
 
