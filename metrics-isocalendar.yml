@@ -1,0 +1,28 @@
+name: GitHub Metrics - Isometric Calendar (3D)
+
+on:
+  schedule: [{ cron: "0 0 * * *" }]     # Chạy lúc 00:00 mỗi ngày (UTC)
+  workflow_dispatch:                    # Cho phép chạy thủ công
+
+jobs:
+  render-isocalendar:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Generate Isometric Commit Calendar (Half-year)
+        uses: lowlighter/metrics@latest
+        with:
+          filename: isocalendar.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""                      # Không dùng base metrics khác
+          plugin_isocalendar: yes       # Bật plugin 3D
+          # plugin_isocalendar_duration: half-year   # Mặc định là half-year, có thể bỏ dòng này
+
+      # Nếu bạn muốn thêm cả full-year, uncomment phần dưới
+      # - name: Generate Isometric Commit Calendar (Full-year)
+      #   uses: lowlighter/metrics@latest
+      #   with:
+      #     filename: isocalendar.full.svg
+      #     token: ${{ secrets.METRICS_TOKEN }}
+      #     base: ""
+      #     plugin_isocalendar: yes
+      #     plugin_isocalendar_duration: full-year
