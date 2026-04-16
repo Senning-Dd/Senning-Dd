@@ -1,0 +1,21 @@
+name: GitHub Metrics - Isometric Calendar (3D)
+
+on:
+  schedule:
+    - cron: "0 0 * * *"        # Tự động chạy lúc 00:00 mỗi ngày (giờ UTC)
+  workflow_dispatch:           # Cho phép chạy thủ công
+
+jobs:
+  render-isocalendar:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write           # Quyền cần thiết để push file SVG
+
+    steps:
+      - name: Generate Isometric Commit Calendar (Half-year - 6 tháng)
+        uses: lowlighter/metrics@latest
+        with:
+          filename: isocalendar.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_isocalendar: yes
