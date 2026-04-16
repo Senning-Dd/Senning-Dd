@@ -1,0 +1,27 @@
+name: GitHub Metrics - Languages (Default Mode)
+
+on:
+  schedule:
+    - cron: "0 2 * * *"        # Chạy lúc 02:00 mỗi ngày (UTC), khác giờ với isocalendar
+  workflow_dispatch:           # Cho phép chạy thủ công
+
+jobs:
+  render-languages:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Generate Most Used Languages (Default Mode)
+        uses: lowlighter/metrics@latest
+        with:
+          filename: languages.svg
+          token: ${{ secrets.METRICS_TOKEN }}
+          base: ""
+          plugin_languages: yes
+          plugin_languages_limit: 20              # Hiển thị tối đa 8 ngôn ngữ
+          plugin_languages_ignored: >-           # Bỏ qua các ngôn ngữ thường không quan trọng
+            Shell, Tex, Less, QMake, CMake
+          plugin_languages_details: bytes-size, percentage   # Hiển thị kích thước + phần trăm
+          plugin_languages_other: no            # Gom ngôn ngữ ít dùng vào "Other"
+          plugin_languages_indepth: no           # Default mode (không clone repo)
